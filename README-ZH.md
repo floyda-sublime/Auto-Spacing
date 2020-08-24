@@ -1,4 +1,5 @@
-## Auto-Spacing
+## Auto-Spacing  
+> fork from https://github.com/xwartz/Auto-Spacing  
 
 Sublime Text 3插件，给中英文之间加上空格。
 

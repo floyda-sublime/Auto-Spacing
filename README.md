@@ -1,4 +1,5 @@
-## Auto-Spacing
+## Auto-Spacing  
+> fork from https://github.com/xwartz/Auto-Spacing  
 
 Paranoid text spacing for good readability, to automatically insert whitespace between CJK (Chinese, Japanese, Korean) and half-width characters (alphabetical letters, numerical digits and symbols).
 
