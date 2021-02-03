@@ -65,7 +65,7 @@ class AutoSpacingCommand(sublime_plugin.TextCommand):
     if output == None or len(output) < 1:
       return
 
-    print(output, buffer_text)
+    # print(output, buffer_text)
 
     # Replace the text only if it's different.
     if output != buffer_text:
@@ -177,6 +177,7 @@ class PluginUtils:
         new_text = BRACKET_CJK_RE.sub(r'\1 \2', new_text)
     new_text = FIX_BRACKET_RE.sub(r'\1\3\5', new_text)
 
+    new_text = re.sub("\\ *([,.;:!?])\\ *", "\\1 ", new_text) # 标点符号
     new_text = FIX_SYMBOL_RE.sub(r'\1\2 \3', new_text)
 
     new_text = CJK_ANS_RE.sub(r'\1 \2', new_text)
